@@ -93,19 +93,6 @@ LEFT JOIN
     quartos q ON r.id_quarto = q.id_quarto
 
 
-/* todos os quartos que não foram reservados */
-SELECT
-    r.id_reserva,
-    h.nome,
-    h.email,
-    q.numero_quarto,
-    q.cama AS quantidade_cama,
-    r.data_inicio,
-    r.data_termino,
-    r.data_reserva,
-    r.horario_reserva
-
-
     /* todos os quartos que não foram reservados */
 SELECT
     r.id_reserva,
